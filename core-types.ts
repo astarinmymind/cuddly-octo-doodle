@@ -1,4 +1,4 @@
-// basic types: number, string, boolean, arrays, tuples, enums, any
+// basic types: number, string, boolean, arrays, tuples, enums, unions, any
 
 function add(n1: number, n2: number, showResult: boolean, phrase: string) {
     const result = n1 + n2;
