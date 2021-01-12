@@ -1,18 +1,18 @@
 /* Functions */ 
 
 // return type typically inferred but can be explicit
-function add(n1: number, n2: number): number {
+function adds(n1: number, n2: number): number {
     return n1 + n2;
 }
 
 // return type is inferred void if no return
-function printResult(num: number): void { 
+function printResults(num: number): void { 
     console.log('Result: ' + num);
 }
 
 // function types
 let combineValues: (a: number, b: number) => number; 
-combineValues = add;
+combineValues = adds;
 console.log(combineValues(9, 9));
 
 // callback functions
