@@ -65,4 +65,18 @@ console.log(combinedAges);
 const combinedNames = combine('Ang', 'ela');
 console.log(combinedNames);
 
+// unknown type --a better alternative to any
+let userInput: unknown;
+let userName: string; 
 
+userInput = 3;
+userInput = 'Hi';
+if (typeof userInput === 'string') {
+    userName = userInput;
+}
+
+// never type --used to specify never returns (usually errors)
+function generateError(message: string, code: number): never { 
+    throw { message: message, errorcode: code};
+}
+generateError('An error occured!', 500);
